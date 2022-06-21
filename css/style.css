@@ -2458,7 +2458,7 @@
 
     /* sec 공통구역 */
     .container {
-        padding: 60px 20px 50px;
+        padding: 75px 20px 60px;
     }
     .title h2 {
         font-size: 30px;
@@ -2528,7 +2528,7 @@
     }
     .sec-2 .info-con {
         margin-top: 50px;
-        padding-bottom: 65px;
+        padding-bottom: 75px;
     }
     .sec-2 .info-txt h6 {
         font-size: 20px;
@@ -2541,7 +2541,7 @@
 
     /* sec-3 */
     .sec-3 .container {
-        padding: 70px 20px 120px;
+        padding: 75px 20px 120px;
     }
     .sec-3-wrap {
         margin-top: 60px;
@@ -2552,7 +2552,8 @@
     .sec-3 .info-inner:first-child {
         margin-bottom: 40px;
         align-items: center;
-    }.sec-3 .img-box {
+    }
+    .sec-3 .img-box {
         width: 40px;
         height: 40px;
         margin-right: 30px;
@@ -2598,7 +2599,7 @@
     
     /* sec-6 */
     .sec-6 .container {
-        padding: 50px 20px 100px;
+        padding: 75px 20px 100px;
     }
     .sec-6 .news {
         height: 90px;
