@@ -2606,9 +2606,10 @@
     }
     .sec-6 .news-site {
         font-size: 12px;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
     }
     .sec-6 .news-title {
+        font-size: 15px;
         margin-bottom: 7px;
     }
     .sec-6 .news-date {
