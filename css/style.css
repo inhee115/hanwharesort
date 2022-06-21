@@ -2619,6 +2619,9 @@
     .footer {
         height: 320px;
     }
+    .footer-t-inner{
+        width: 300px;
+    }
     .footer-t-inner li{
         font-size: 12px;
     }
