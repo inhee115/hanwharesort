@@ -1049,6 +1049,7 @@
 .footer-link .family{
     display: flex;
     margin-top: 30px;
+    cursor: pointer;
 }
 .footer-link .family-txt{
     display: inline-block;
@@ -1077,11 +1078,23 @@
     background-color: #A6BBC8;
     text-align: center;
     line-height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #A6BBC8;
+}
+.footer-link .family-btn:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.footer-link .family-btn:hover a{
+    color: #405F6F;
+    font-weight: 500;
 }
 .footer-link .family-btn a{
     font-size: 18px;
     font-weight: 400;
     color: #fff;
+    transition: 0.5s;
 }
 
 
@@ -2416,7 +2429,7 @@
     .footer-link .family-btn {
         width: 50px;
         height: 35px;
-        line-height: 35px;
+        line-height: 31px;
     }
     .footer-link .family-btn a {
         font-size: 13px;
