@@ -2221,8 +2221,11 @@
         height: 259px;
         margin-top: 80px;
     }
+    .sec-3 .img-con img{
+        object-position: bottom;
+    }
 
-
+    
     /* sec-4 */
     .sec-4 .container{
         width: 100%;
@@ -2573,9 +2576,6 @@
     }
     .sec-3 .img-con{
         height: 220px;
-    }
-    .sec-3 .img-con img{
-        object-position: bottom;
     }
 
 
