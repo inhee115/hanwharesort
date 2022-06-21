@@ -411,7 +411,7 @@
     background-color: #A6BBC8;
     text-align: center;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .researvation-box .search:hover{
     background-color: #405F6F;
@@ -572,7 +572,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 99;
 }
 .sec-2-tabs .tabs{
     display: flex;
@@ -605,6 +605,7 @@
 }
 .sec-2 .in-content.active{
     opacity: 1;
+    z-index: 9;
 }
 .sec-2 .img-con{
     width: 1000px;
@@ -631,6 +632,10 @@
     line-height: 60px;
     cursor: pointer;
     float: right;
+    transition: 0.5s;
+}
+.sec-2 .info-con .btn-more:hover{
+    background-color: #405F6F;
 }
 .sec-2 .info-con .btn-more a{
     color: #fff;
@@ -711,6 +716,10 @@
     line-height: 60px;
     margin-top: 90px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.sec-3 .btn-sec-3:hover{
+    background-color: #405F6F;
 }
 .sec-3 .btn-sec-3 a{
     font-size: 22px;
@@ -798,9 +807,10 @@
     height: 40px;
     border: 1px solid #fff;
     text-align: center;
-    line-height: 40px;
+    line-height: 37px;
     cursor: pointer;
     margin-top: 80px;
+    transition: 0.5s;
 }
 .sec-4 .resort-info .btn-more a{
     font-size: 18px;
@@ -808,13 +818,23 @@
     color: #fff;
     position: relative;
     margin-right: 30px;
+    transition: 0.5s;
 }
 .sec-4 .resort-info .btn-more a:after{
     content: '\f105';
     font-family: fontawesome;
     position: absolute;
-    top: -5px;
+    top: -3px;
     right: -25px;
+    transition: 0.5s;
+}
+.sec-4 .resort-info .btn-more:hover{
+    background-color: #fff;
+}
+.sec-4 .resort-info .btn-more:hover a,
+.sec-4 .resort-info .btn-more:hover a:after{
+    color: #405F6F;
+    font-weight: 500;
 }
 .sec-4 .resort-info.fif{
     right: 0;
@@ -1254,11 +1274,13 @@
     .sec-4 .resort-info .btn-more{
         width: 140px;
         line-height: 38px;
-
     }
     .sec-4 .resort-info .btn-more a{
         font-size: 16px;
         margin-right: 25px;
+    }
+    .sec-4 .resort-info .btn-more a:after{
+        top: -6px;
     }
 
 
@@ -1717,7 +1739,7 @@
         width: 125px;
         height: 40px;
         margin-top: 55px;
-        line-height: 38px;
+        line-height: 37px;
     }
     .sec-4 .resort-info .btn-more a{
         font-size: 16px;
@@ -1725,7 +1747,7 @@
     }
     .sec-4 .resort-info .btn-more a:after{
         font-size: 16px;
-        top: -4px;
+        top: -5px;
         right: -20px;
     }
     .sec-4 .resort-info.fif{
@@ -1995,10 +2017,13 @@
     .sec-4 .resort-info .btn-more{
         width: 110px;
         height: 35px;
-        line-height: 35px;
+        line-height: 31px;
     }
     .sec-4 .resort-info .btn-more a{
         font-size: 14px;
+    }
+    .sec-4 .resort-info .btn-more a:after{
+        top: -4px;
     }
 
 
@@ -2459,6 +2484,9 @@
     }
     .researvation-box .search h3{
         font-size: 18px;
+    }
+    .researvation-box .search h3 {
+        line-height: 37px;
     }
 
     /* sec 공통구역 */
