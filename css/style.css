@@ -2221,9 +2221,6 @@
         padding: 100px 20px 0;
     }
     .sec-4 .inner-gallery li.active{
-        height: 265px;
-    }
-    .sec-4 .inner-gallery li.active .inner-gallery li:nth-child(1){
         height: 290px;
     }
     .sec-4 .resort-info h4 {
