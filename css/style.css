@@ -730,7 +730,7 @@
     height: 100vh;
 }
 .sec-4 .fade-gallery{
-    z-index: 999;
+    z-index: 99;
     position: absolute;
     width: 1700px;
 }
@@ -1664,31 +1664,78 @@
     }
 
     /* sec-4 */
+    .sec-4 .container{
+        padding: 110px 0 80px;
+    }
     .sec-4 .fade-gallery{
         width: 960px;
     }
+    .sec-4 .inner-gallery{
+        flex-direction: column;
+        margin-top: 50px;
+    }
     .sec-4 .inner-gallery li{
-        width: 172px;
+        width: 100%;
+        position: relative;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .sec-4 .inner-gallery li.active{
+        height: 290px;
+    }
+    .sec-4 .inner-gallery li::after{
+        content: '\2b';
+        font-family: fontawesome;
+        font-size: 25px;
+        font-weight: 100;
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        color: #fff;
+    }
+    .sec-4 .info-title{
+        border: 0;
+        opacity: 1;
     }
     .sec-4 .info-title a{
-        font-size: 16px;
+        font-size: 19px;
+    }
+    .sec-4 .resort-info{
+        top: 80px;
     }
     .sec-4 .resort-info h4{
         font-size: 18px;
     }
     .sec-4 .resort-info h6{
-        font-size: 14px;line-height: 1.6;
+        margin-top: 20px;
     }
     .sec-4 .resort-info .btn-more{
-        width: 120px;
+        width: 125px;
+        height: 40px;
+        margin-top: 55px;
+        line-height: 38px;
     }
     .sec-4 .resort-info .btn-more a{
-        font-size: 14px;
+        font-size: 16px;
+        margin-right: 20px;
     }
     .sec-4 .resort-info .btn-more a:after{
         font-size: 16px;
-        top: -9px;
+        top: -4px;
+        right: -20px;
     }
+    .sec-4 .resort-info.fif{
+        text-align: left;
+        left: 20px;
+    }
+    .sec-4 .resort-info.fif .btn-more{
+        float: none;
+    }
+
 
 
     /* sec-5 */
@@ -1821,7 +1868,9 @@
     .sec-1-content .site span{
         font-size: 14px;
     }
-    .sec-1-content .site span::before{
+    .sec-1-content .box1 .site span::before,
+    .sec-1-content .box2 .site span::before,
+    .sec-1-content .box3 .site span::before{
         top: 2px;
     }
     .sec-1-content .txt-box{
@@ -1931,41 +1980,8 @@
 
 
     /* sec-4 */
-    .sec-4 .container{
-        padding: 110px 0 80px;
-    }
     .sec-4 .fade-gallery{
         width: 760px;
-    }
-    .sec-4 .inner-gallery{
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    .sec-4 .inner-gallery li{
-        width: 100%;
-        position: relative;
-        border: 1px solid #fff;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-    .sec-4 .inner-gallery li.active{
-        height: 290px;
-    }
-    .sec-4 .inner-gallery li::after{
-        content: '\2b';
-        font-family: fontawesome;
-        font-size: 25px;
-        font-weight: 100;
-        position: absolute;
-        top: 9px;
-        right: 15px;
-        color: #fff;
-    }
-    .sec-4 .info-title{
-        border: 0;
-        opacity: 1;
     }
     .sec-4 .info-title a{
         font-size: 18px;
@@ -1976,30 +1992,13 @@
     .sec-4 .resort-info h4{
         font-size: 16px;
     }
-    .sec-4 .resort-info h6{
-        font-size: 14px;
-        margin-top: 20px;
-    }
     .sec-4 .resort-info .btn-more{
         width: 110px;
         height: 35px;
-        margin-top: 55px;
         line-height: 35px;
     }
     .sec-4 .resort-info .btn-more a{
         font-size: 14px;
-    }
-    .sec-4 .resort-info .btn-more a:after{
-        font-size: 14px;
-        top: -6px;
-        right: -20px;
-    }
-    .sec-4 .resort-info.fif{
-        text-align: left;
-        left: 20px;
-    }
-    .sec-4 .resort-info.fif .btn-more{
-        float: none;
     }
 
 
@@ -2060,6 +2059,26 @@
     .header-menu{
         width: 80%;
         right: -80%;
+    }
+    .header-fix .inner-box{
+        height: 60px;
+    }
+    .header-logo{
+        width: 200px;
+        height: 23px;
+    }
+    .btn-menu{
+        width: 25px;
+        height: 16px;
+    }
+    .btn-menu span{
+        width: 25px;
+    }
+    .btn-menu .btn2{
+        width: 18px;
+    }
+    .moble-menu{
+        padding: 70px 20px 15px;
     }
     .banner-txt{
         width: 100%;
@@ -2154,7 +2173,7 @@
     }
     .sec-2 .info-con .btn-more{
         bottom: 0px;
-        right: 323px;
+        left: 0;
     }
     .sec-2 .info-txt h6{
         font-size: 22px;
@@ -2221,7 +2240,7 @@
         padding: 100px 20px 0;
     }
     .sec-4 .inner-gallery li.active{
-        height: 290px;
+        height: 265px;
     }
     .sec-4 .resort-info h4 {
         font-size: 16px;
@@ -2298,22 +2317,24 @@
         height: auto;
         padding: 30px 80px 0;
         border: none;
+        display: flex;
+        justify-content: center;
     }
     .footer-t-inner {
         height: auto;
-        width: 100%;
+        width: 350px;
         flex-wrap: wrap;
     }
-    .footer-t-inner li:nth-child(1){
+    .footer-t-inner li:nth-child(1),
+    .footer-t-inner li:nth-child(3){
         margin-right: 15px;
+    }
+    .footer-t-inner li:nth-child(1),
+    .footer-t-inner li:nth-child(2){
         margin-bottom: 5px;
     }
     .footer-t-inner li:nth-child(2){
-        margin-bottom: 5px;
         margin-right: 0;
-    }
-    .footer-t-inner li:nth-child(3){
-        margin-right: 15px;
     }
     .footer .container {
         padding: 30px 25px 0;
@@ -2322,25 +2343,22 @@
         flex-wrap: wrap;
     }
     .footer-b .txt-box {
-        width: 100%;
+        width: 440px;
         justify-content: center;
     }
     .footer-b .txt-box h2,
     .footer-b .txt-box p{
         font-size: 12px;
     }
-    .footer-b .txt-box p:nth-child(2n){
+    .footer-b .txt-box p{
+        margin-left: 15px;
+    }
+    .footer-b .txt-box p:nth-child(4){
         margin-left: 15px;
     }
     .footer-b .txt-box p:nth-child(3),
-    .footer-b .txt-box p:nth-child(5){
+    .footer-b .txt-box p:nth-child(6){
         margin-left: 0px;
-    }
-    .footer-b .txt-box p:nth-child(3){
-        margin-left: 75px;
-    }
-    .footer-b .txt-box p:nth-child(4){
-        margin-right: 75px;
     }
     .footer-link{
         padding: 0;
@@ -2375,7 +2393,246 @@
     .footer-link .family-btn a {
         font-size: 13px;
     }
+    
+}
 
+@media (max-width:500px){
+    /* header */
+    .header-logo {
+        width: 180px;
+        height: 21px;
+    }
+    .btn-menu {
+        height: 13px;
+    }
+    .moble-menu .login{
+        font-size: 20px;
+    }.moble-menu .login:after{
+        font-size: 20px;
+        right: -17px;
+    }
+    .moble-menu .signup,
+    .moble-menu .re{
+        font-size: 14px;
+    }
+    .header-menu .menu {
+        padding: 13px 20px;
+    }
+    .header-menu .menu a{
+        font-size: 14px;
+    }
+
+    /* banner */
+    .banner-txt h1 {
+        font-size: 30px;
+    }
+    .banner-txt span {
+        font-size: 14px;
+    }
+    .researvation-box .in-box{
+        height: 55px;
+        padding: 7px 20px;
+    }
+    .researvation-box .in-box p{
+        font-size: 10px;
+    }
+    .researvation-box .in-box h3 {
+        font-size: 14px;
+    }
+    .researvation-box .hotel{
+        width: 40%;
+    }
+    .researvation-box .checkin-out{
+        width: 60%;
+    }
+    .researvation-box .checkin-out h3{
+        width: 196px;
+    }
+    .checkin-out h3 span:last-child::before{
+        left: -21px;
+        height: 1px;
+    }
+    .researvation-box .search h3{
+        font-size: 18px;
+    }
+
+    /* sec 공통구역 */
+    .container {
+        padding: 60px 20px 50px;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+
+
+    /* sec-1 */
+    .sec-1 .container {
+        padding: 140px 20px 60px;
+    }
+    .sec-1-content {
+        margin-top: 50px;
+    }
+    .sec-1-content .inner-box{
+        margin-bottom: 40px;
+    }
+    .sec-1-content .img-box {
+        height: 250px;
+    }
+    .sec-1-content .site{
+        width: 55px;
+        height: 25px;
+        top: 237px;
+    }
+    .sec-1-content .site span {
+        font-size: 12px;
+    }
+    .sec-1-content .box1 .site span::before,
+    .sec-1-content .box2 .site span::before,
+    .sec-1-content .box3 .site span::before{
+        top: 1px;
+        left: -20px;
+    }
+    .sec-1-content .txt-box {
+        padding: 40px 0 20px;
+    }
+    .sec-1-content .txt-box h1 {
+        font-size: 20px;
+    }
+    .sec-1-content .txt-box h3 {
+        font-size: 14px;
+    }
+    .sec-1-content .txt-box h5 {
+        font-size: 16px;
+    }
+    .sec-1 .btn-more {
+        margin-top: 50px;
+    }
+    .sec-1 .btn-more a {
+        font-size: 14px;
+    }
+
+    /* sec-2 */
+    .sec-2 .tab-container {
+        margin-top: 40px;
+        height: 570px;
+    }
+    .sec-2 .tabs li.active{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .sec-2-tabs .tabs li{
+        font-size: 12px;
+    }
+    .sec-2 .img-con {
+        margin-top: 35px;
+    }
+    .sec-2 .info-con {
+        margin-top: 50px;
+        padding-bottom: 65px;
+    }
+    .sec-2 .info-txt h6 {
+        font-size: 20px;
+    }
+    .sec-2 .info-txt p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+
+    /* sec-3 */
+    .sec-3 .container {
+        padding: 70px 20px 120px;
+    }
+    .sec-3-wrap {
+        margin-top: 60px;
+    }
+    .sec-3 .info-box {
+        padding: 40px 0;
+    }
+    .sec-3 .info-inner:first-child {
+        margin-bottom: 40px;
+        align-items: center;
+    }.sec-3 .img-box {
+        width: 40px;
+        height: 40px;
+        margin-right: 30px;
+    }
+    .sec-3 .txt-box h4{
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .sec-3 .txt-box span{
+        font-size: 14px;
+    }
+    .sec-3 .btn-sec-3{
+        margin-top: 45px;
+    }
+    .sec-3 .btn-sec-3 a {
+        font-size: 18px;
+    }
+    .sec-3 .img-con{
+        height: 195px;
+    }
+    .sec-3 .img-con img{
+        object-position: bottom;
+    }
+
+
+    /* sec-4 */
+    .sec-4-wrap,
+    .sec-4 .container,
+    .sec-4 .fade-gallery{
+        height: 900px;
+    }
+    .sec-4 .inner-gallery li.active {
+        height: 290px;
+    }
+
+    /* sec-5 */
+    .sec-5 .container {
+        padding: 110px 0 60px;
+    }
+    .sec-5-wrap {
+        margin: 60px 20px 0 !important;
+    }
+    
+    /* sec-6 */
+    .sec-6 .container {
+        padding: 50px 20px 100px;
+    }
+    .sec-6 .news {
+        height: 90px;
+    }
+    .sec-6 .news-site {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .sec-6 .news-title {
+        margin-bottom: 7px;
+    }
+    .sec-6 .news-date {
+        font-size: 12px;
+    }
+
+
+    /* footer */
+    .footer {
+        height: 320px;
+    }
+    .footer-t-inner li{
+        font-size: 12px;
+    }
+    .footer-b .txt-box{
+        width: 350px;
+    }
+    .footer-b .txt-box h2, .footer-b .txt-box p {
+        font-size: 10px;
+    }
+    .footer-b .txt-box p{
+        margin-left: 10px;
+    }.footer-b .txt-box p:nth-child(4){
+        margin-left: 10px;
+    }
 
 
 }
