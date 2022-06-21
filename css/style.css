@@ -2223,6 +2223,9 @@
     .sec-4 .inner-gallery li.active{
         height: 265px;
     }
+    .sec-4 .inner-gallery li:nth-child(1).active{
+        height: 290px;
+    }
     .sec-4 .resort-info h4 {
         font-size: 16px;
     }
