@@ -383,7 +383,7 @@
 .researvation-box .checkin-out h3{
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 245px;
 }
 .checkin-out h3 span:last-child{
     position: relative;
@@ -395,7 +395,7 @@
     background-color: #283e49;
     position: absolute;
     top: 50%;
-    left: -38px;
+    left: -34px;
 
 
 }
@@ -1424,7 +1424,7 @@
         font-size: 18px;
     }
     .researvation-box .checkin-out h3{
-        width: 250px;
+        width: 215px;
     }
     .checkin-out h3 span:last-child::before{
         left: -27px;
@@ -1588,7 +1588,7 @@
         padding: 15px 20px;
     }
     .researvation-box .checkin-out h3{
-        width: 230px;
+        width: 196px;
     }
 
 
@@ -2488,7 +2488,7 @@
         width: 65%;
     }
     .researvation-box .checkin-out h3{
-        width: 185px;
+        width: 155px;
     }
     .checkin-out h3 span:last-child::before{
         left: -21px;
