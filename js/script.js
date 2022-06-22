@@ -66,7 +66,7 @@ $(document).ready(function(){
             });
 
              //sec-4
-             $('.sec-4 .inner-gallery li').mouseenter(function(){
+             $('.sec-4 .inner-gallery li').hover(function(){
                 var ch = $(this).attr('data-image');
 
                 $('.sec-4 .fade-gallery-photo').css({
@@ -94,7 +94,7 @@ $(document).ready(function(){
             });
 
              //sec-4
-             $('.sec-4 .inner-gallery li').mouseenter(function(){
+             $('.sec-4 .inner-gallery li').hover(function(){
                 $(this).addClass('active');
                 $(this).siblings().removeClass('active');
             });              
