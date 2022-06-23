@@ -11,8 +11,10 @@ $(document).ready(function(){
 
     //sec-5 스와이퍼
     var swiper = new Swiper(".sec-5-wrap.mySwiper", {
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
           },
     });
 
@@ -66,7 +68,7 @@ $(document).ready(function(){
             });
 
              //sec-4
-             $('.sec-4 .inner-gallery li').hover(function(){
+             $('.sec-4 .inner-gallery li').mouseenter(function(){
                 var ch = $(this).attr('data-image');
 
                 $('.sec-4 .fade-gallery-photo').css({
@@ -94,7 +96,7 @@ $(document).ready(function(){
             });
 
              //sec-4
-             $('.sec-4 .inner-gallery li').hover(function(){
+             $('.sec-4 .inner-gallery li').mouseenter(function(){
                 $(this).addClass('active');
                 $(this).siblings().removeClass('active');
             });              
