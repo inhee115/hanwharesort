@@ -788,7 +788,7 @@
     top: 160px;
     color: #fff;
     display: none;
-    transition: 0.5s;
+    transition: 1s;
 }
 .sec-4 .inner-gallery li.active .resort-info{
     display: block;
