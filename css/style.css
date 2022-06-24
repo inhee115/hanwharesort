@@ -383,21 +383,14 @@
 .researvation-box .checkin-out h3{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 245px;
 }
-.checkin-out h3 span:last-child{
-    position: relative;
-}
-.checkin-out h3 span:last-child::before{
-    content: '';
+.researvation-box .checkin-out .line{
     width: 10px;
     height: 2px;
     background-color: #283e49;
-    position: absolute;
-    top: 50%;
-    left: -34px;
-
-
+    margin: 0 10px;
 }
 .researvation-box .people{
     width: 25%;
@@ -1426,8 +1419,8 @@
     .researvation-box .checkin-out h3{
         width: 215px;
     }
-    .checkin-out h3 span:last-child::before{
-        left: -27px;
+    .researvation-box .checkin-out .line{
+        height: 1px;
     }
     .researvation-box .search h3{
         line-height: 49px;
@@ -2356,7 +2349,7 @@
     .footer-t{
         width: 100%;
         height: auto;
-        padding: 30px 80px 0;
+        padding-top: 30px;
         border: none;
         display: flex;
         justify-content: center;
@@ -2378,7 +2371,7 @@
         margin-right: 0;
     }
     .footer .container {
-        padding: 30px 25px 0;
+        padding: 30px 0 0;
     }
     .footer-b {
         flex-wrap: wrap;
@@ -2483,6 +2476,14 @@
     }
     .researvation-box .hotel{
         width: 35%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .researvation-box .hotel h3{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .researvation-box .checkin-out{
         width: 65%;
@@ -2490,10 +2491,9 @@
     .researvation-box .checkin-out h3{
         width: 155px;
     }
-    .checkin-out h3 span:last-child::before{
-        left: -21px;
-        height: 1px;
+    .researvation-box .checkin-out .line{
         width: 8px;
+        margin: 0 5px;
     }
     .researvation-box .search h3{
         font-size: 18px;
@@ -2649,11 +2649,14 @@
     }
     .sec-6 .news-site {
         font-size: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 5px;        
     }
     .sec-6 .news-title {
         font-size: 15px;
         margin-bottom: 7px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .sec-6 .news-date {
         font-size: 12px;
