@@ -920,7 +920,7 @@
 
 /* pc에서는 없고 모바일에서 나오는 스와이퍼 */
 .sec-5-wrap{
-    display: none;
+    display: none !impertant;
 }
 
 
@@ -2039,7 +2039,7 @@
         display: none;
     }
     .sec-5-wrap{
-        display: block;
+        display: block !important;
         margin-top: 50px;
         height: 660px !important;
     }
